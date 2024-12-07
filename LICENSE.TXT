@@ -1,0 +1,19 @@
+
+License
+
+This project, ProSafe, is protected by a Restricted Use License.  
+
+© 2024 Gustavo Calixto & Lucas Sousa & Davi Botelho.
+
+Granted Rights: 
+- The source code may be viewed and downloaded exclusively for analysis and consultation.  
+- Feedback and comments on the code are welcome.  
+
+Restrictions: 
+- Prohibited actions include, but are not limited to:  
+- Commercial or non-commercial use of the code.  
+- Modification or redistribution of the code.  
+- Integration into other projects or products.  
+
+Special Permission:
+- Any usage beyond the granted rights requires explicit written authorization from the authors.

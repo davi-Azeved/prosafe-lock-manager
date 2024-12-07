@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="blocks" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="58f49208-5911-48a3-b293-83a66e565df0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from tbblock]]>
+	</queryString>
+	<field name="idblock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_block" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomemaq" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="motivoblock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="40" uuid="3ada7c43-fa10-477a-b7b7-f8fcdb68b96f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Bloqueios]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="425" y="0" width="130" height="20" uuid="d2f819cb-2fe6-4b35-8ef4-b47c4c1c8a60"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="27" height="20" uuid="3707fad5-c215-4147-ba3c-dc2a3a420d48"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="0" width="76" height="20" uuid="eca61c59-e933-489b-b426-e09f1239cdca"/>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="0" width="68" height="20" uuid="d4e9280a-8455-468b-9b96-217d6847c96b"/>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="0" width="100" height="20" uuid="0365992f-0150-40fe-8d7e-b24d8adc6a07"/>
+				<text><![CDATA[Responsável]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="0" width="100" height="20" uuid="c56b3310-1bca-4c30-b971-af935451057d"/>
+				<text><![CDATA[Máquina]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="0" width="144" height="20" uuid="33161f4a-5a3f-43d3-96c9-499b052aa744"/>
+				<text><![CDATA[Motivos]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="27" height="20" uuid="78b3dc24-a7ef-4ca7-9dbb-24d5f1cbdae1"/>
+				<textFieldExpression><![CDATA[$F{idblock}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="0" width="76" height="20" uuid="2efb336e-a734-4798-91bb-99663c2050e3"/>
+				<textFieldExpression><![CDATA[$F{data_block}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="0" width="68" height="20" uuid="b3dcf3a8-dc0d-42cc-bda5-4ed2dacba69a"/>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="0" width="100" height="20" uuid="02f43007-6db8-4064-8e75-525b4630c36c"/>
+				<textFieldExpression><![CDATA[$F{usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="0" width="100" height="20" uuid="a27306c6-2b99-4588-94f6-fd392a6e04f8"/>
+				<textFieldExpression><![CDATA[$F{nomemaq}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="0" width="144" height="20" uuid="f5ff62d5-fb90-455a-a6e7-20a418610406"/>
+				<textFieldExpression><![CDATA[$F{motivoblock}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
